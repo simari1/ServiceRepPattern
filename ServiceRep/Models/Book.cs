@@ -1,4 +1,4 @@
-﻿namespace ServiceRep.Models
+﻿namespace ServiceRepWithFactory.Models
 {
     public class Book
     {

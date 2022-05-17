@@ -1,4 +1,4 @@
-using ServiceRep.Repositories;
+using ServiceRepWithFactory.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

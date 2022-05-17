@@ -1,6 +1,6 @@
-﻿using ServiceRep.Models;
+﻿using ServiceRepWithFactory.Models;
 
-namespace ServiceRep.Services
+namespace ServiceRepWithFactory.Services
 {
     public interface IBooksService
     {

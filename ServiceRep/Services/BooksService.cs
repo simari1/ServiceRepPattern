@@ -1,7 +1,7 @@
-﻿using ServiceRep.Models;
-using ServiceRep.Repositories;
+﻿using ServiceRepWithFactory.Models;
+using ServiceRepWithFactory.Repositories;
 
-namespace ServiceRep.Services
+namespace ServiceRepWithFactory.Services
 {
     /// <summary>
     /// Serviceクラス
