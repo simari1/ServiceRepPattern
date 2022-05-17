@@ -7,11 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 
-//builder.Services.AddTransient<IBooksRepository, BooksJsonRepository>();
-//builder.Services.AddTransient<IBooksRepository, BooksYamlRepository>();
-
-var a = builder.Configuration["Source"];
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
