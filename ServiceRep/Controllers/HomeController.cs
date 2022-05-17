@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ServiceRep.Models;
-using ServiceRep.Repositories;
-using ServiceRep.Services;
+using ServiceRepWithFactory.Models;
+using ServiceRepWithFactory.Repositories;
+using ServiceRepWithFactory.Services;
 using System.Diagnostics;
 
-namespace ServiceRep.Controllers
+namespace ServiceRepWithFactory.Controllers
 {
     public class HomeController : Controller
     {

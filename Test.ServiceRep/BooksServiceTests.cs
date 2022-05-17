@@ -1,9 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ServiceRep.Repositories;
+using ServiceRepWithFactoryWithFactory.Repositories;
+using ServiceRepWithFactoryWithFactory.Services;
 using System.Linq;
-using Test.ServiceRep.Test.Repositories;
+using Test.ServiceRepWithFactory.Test.Repositories;
 
-namespace Test.ServiceRep
+namespace Test.ServiceRepWithFactory
 {
     /// <summary>
     /// BooksServiceクラスをテストするテストクラス
@@ -23,9 +24,8 @@ namespace Test.ServiceRep
         [TestMethod]
         public void When_returnBooks_is_true_then_NotNull()
         {
-            global::ServiceRep.Services.BooksService booksService = new global::ServiceRep.Services.BooksService(_booksRepository);
-
-            var books = booksService.GetBooks(true);
+            BooksJsonService booksJsonService = new BooksJsonService(_booksRepository);
+            var books = booksJsonService.GetBooks(true);
 
             Assert.IsNotNull(books);
             Assert.AreEqual(4, books.ToList().Count);
@@ -34,9 +34,8 @@ namespace Test.ServiceRep
         [TestMethod]
         public void When_returnBooks_is_false_then_Null()
         {
-            global::ServiceRep.Services.BooksService booksService = new global::ServiceRep.Services.BooksService(_booksRepository);
-
-            var books = booksService.GetBooks(false);
+            BooksJsonService booksJsonService = new BooksJsonService(_booksRepository);
+            var books = booksJsonService.GetBooks(false);
 
             Assert.IsNull(books);
         }
