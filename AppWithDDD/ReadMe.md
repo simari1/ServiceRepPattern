@@ -49,7 +49,6 @@ Infrastructureは相互変換可能なもの。Repositoryクラスのような�
 DI、ServiceLocatorを利用し単体テストもでしやすくする。
 https://www.nuits.jp/entry/servicelocator-vs-dependencyinjection#ServiceLocator%E3%81%A8Dependency-Injection-%E3%81%84%E3%81%9A%E3%82%8C%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%81%B9%E3%81%8D%E3%81%8B
 https://webbibouroku.com/Blog/Article/cs-di-servicecollection
-
 その際単体テストの範囲は以下になる。Repositoryをテストするのは結合テスト。
 	- DomainModelの業務知識のロジック。
 	- DomainService, ApplicationServiceにInMemoryのRepositoryを渡して通しのテスト。
