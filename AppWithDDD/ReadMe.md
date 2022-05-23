@@ -39,7 +39,7 @@ Value ObjectにDomainModelの単純な業務知識のルールをまとめる。
 Userだったら、Id、NameはNullではだめ、とか。
 https://zenn.dev/chida/articles/aa2a63cdf2eb52
 
--Domain Model
+- Domain Model
 関連のある値とふるまいのセットをクラスにまとめる。Self documentingなクラスを作成する。
 https://stg-tud.github.io/eise/WS11-EiSE-07-Domain_Modeling.pdf
 Domain, User Caseを言葉で説明して出てくる名詞がDomain Modelの候補になる。
