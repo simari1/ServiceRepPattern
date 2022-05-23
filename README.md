@@ -9,5 +9,5 @@ ServiceRepWithFactoryを参照
 設定ファイルでどちらのServiceを利用するか設定できる。
 Factoryを使うことでIf文なしに分岐するのを可能にしている。
 
-## DDDｗｐ適用したパターン
+## DDDを適用したパターン
 AppWithDDDを参照
