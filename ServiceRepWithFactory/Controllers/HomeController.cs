@@ -10,17 +10,12 @@ namespace ServiceRepWithFactoryWithFactory.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        //private readonly IBooksRepository _booksRePository;
         private readonly IConfiguration _configuration;
 
-        //public HomeController(ILogger<HomeController> logger, 
-        //    IBooksRepository booksRepository,
-        //    IConfiguration configuration)
         public HomeController(ILogger<HomeController> logger,
         IConfiguration configuration)
         {
             _logger = logger;
-            //this._booksRePository = booksRepository;
             _configuration = configuration;
         }
 
