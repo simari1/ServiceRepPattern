@@ -6,7 +6,7 @@ namespace AppWithDDD.SnsApplication.Circles.GetRecommend
     {
         public CircleGetRecommendResult(List<Circle> recommendCircles)
         {
-            return recommendCircles.Select(x => new CircleSummaryData(x));
+            Summaries.Concat(recommendCircles.Select(x => new CircleSummaryData(x)));
         }
 
         public List<CircleSummaryData> Summaries { get; }
